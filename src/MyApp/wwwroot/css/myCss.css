@@ -1,0 +1,26 @@
+﻿body {
+}
+
+.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+input.ng-pristine {
+    background-color: aqua;
+
+}
+
+.error {
+
+    color: red;
+
+}
+
+.view.ng-enter {
+    transition:1s linear all;
+    opacity:0;
+}
+
+.view.ng-enter-active {
+    opacity: 1;
+}

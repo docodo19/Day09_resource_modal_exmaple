@@ -1,0 +1,20 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h1>Are you sure you would like to delete {{controller.movieToDelete.title}}?</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="button" class="btn btn-block btn-danger" ng-click="controller.deleteMovie()" value="YES" />
+            </div>
+            <div class="col-md-6">
+                <input type="button" class="btn btn-block btn-success" ng-click="controller.cancel()" value="NO" />
+            </div>
+        </div>
+    </div>
+</div>
+
+

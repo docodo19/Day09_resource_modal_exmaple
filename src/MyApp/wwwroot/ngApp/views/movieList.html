@@ -1,0 +1,30 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h1>List of Movies</h1>
+        <p>
+            <a href="/movies/add">Create a new movie</a>
+        </p>
+    </div>
+
+    <div class="col-md-12">
+        <table class="table table-bordered table-hover table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Director</th>
+                <th></th>
+            </tr>
+
+            <tr ng-repeat="m in controller.movies">
+                <td>{{m.id}}</td>
+                <td><a href="#" ng-click="controller.showDetails(m.id)">{{m.title}}</a></td>
+                <td>{{m.director}}</td>
+                <td>
+                    <a href="/movies/edit/{{m.id}}">Edit</a> | 
+                    <a href="/movies/delete/{{m.id}}">Delete</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

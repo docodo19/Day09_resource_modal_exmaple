@@ -1,0 +1,28 @@
+﻿<div class="row">
+
+    <div class="col-md-6 col-md-offset-3">
+        <form novalidate ng-submit="controller.createMovie()" name="movieForm">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" name="title" class="form-control" ng-model="controller.movieToCreate.title" placeholder="Title" required/>
+                <span ng-show="movieForm.title.$touched && movieForm.title.$error.required" class="error">Movie title is required.</span>
+            </div>
+
+            <div class="form-group">
+                <label>Director</label>
+                <input type="text" name="director" class="form-control" ng-model="controller.movieToCreate.director" placeholder="Director" required/>
+                <span ng-show="movieForm.director.$touched && movieForm.director.$error.required" class="error">Movie director is required</span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-block btn-success" value="Create" ng-disabled="movieForm.$invalid" />
+                <input type="button" ng-click="controller.cancel()" class="btn btn-block btn-primary" value="Cancel" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+<!-- [row       [ col-md-6           ]          ]-->
